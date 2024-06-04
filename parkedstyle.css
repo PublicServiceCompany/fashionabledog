@@ -61,7 +61,17 @@ summary,
 /* DESIGN STYLES */
 
 h1 {
+  padding: 70px 0;
   font-size: 4 rem;
   font-family: helvetica, sans-serif;
   text-transform: uppercase;
 }
+
+/* center contents */
+* {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+  }
