@@ -1,0 +1,67 @@
+/* universally reset box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* image reset */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* lists remove bullets and padding */
+menu:not(article menu),
+ol:not(article ol),
+ul:not(article ul) {
+    list-style: none;
+}
+menu,
+ol,
+ul {
+    padding-left: 0;
+}
+article ol,
+article ul {
+    list-style-position: inside;
+}
+
+a {
+    /* Places underlines below the descenders */
+    text-underline-position: under;
+
+
+    /* Sets the thickness as a percentage of the font size */
+    text-decoration-thickness: 8;
+}
+
+/* (62.5/100) * 16px = 10px = 1 rem */
+html {
+  font-size: 62.5%;
+}
+
+/* disable text inflation on mobile */
+html {
+  -webkit-text-size-adjust: none; /* for iOS Safari */
+  text-size-adjust: none; /* for other mobile browsers */
+}
+
+/* pointer cursor to text inputs */
+label,
+button,
+select,
+summary,
+[type=radio],
+[type=submit],
+[type=checkbox] {
+    cursor: pointer;
+}
+
+/* DESIGN STYLES */
+
+h1 {
+  font-size: 4 rem;
+  font-family: helvetica, sans-serif;
+  text-transform: uppercase;
+}
